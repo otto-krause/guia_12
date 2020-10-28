@@ -1,0 +1,202 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+
+	int main( ) {
+	int n1,n2;
+	n1 = ing1();
+	n2= ing2();
+	printf("El primer numero ingresado fue %d, el segundo fue %d ",n1,n2);
+	return 0;
+	}
+
+	int ing1(){
+		int s;
+		printf("Ingrese un numero ");
+		scanf("%d",&s);
+		return s;
+	}
+
+	int ing2(){
+		int a;
+		printf("Ingrese un numero ");
+		scanf("%d",&a);
+		return a;
+	}
+
+2:
+
+#include <stdio.h>
+#include <stdlib.h>
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+
+		int main( ) {
+			int aa=0,bb=0,resul=0,res1,res2;
+			printf(" Ingrese un numero ");
+			scanf("%d",&aa);
+			printf(" Ingrese otro numero ");
+			scanf("%d",&bb);
+			res1=area(aa,bb);
+			res2=perimetro(aa,bb);
+			printf(" El area es %d",res1);
+			printf(" El perimetro es %d ",res2);
+
+		}
+
+	int area(int aa, int bb)
+	{
+		int ar=0;
+		ar=aa*bb;
+		return ar;
+	}
+
+	int perimetro(int aa, int bb)
+	{
+		int per=0;
+		per=(2*aa)+(2*bb);
+		return per;
+	}
+
+3:
+
+#include <stdio.h>
+#include <stdlib.h>
+
+
+	float porcentaje_hombres(float ch,float ct);
+	float porcentaje_mujeres(float cm, float ct);
+
+	int main() {
+	float ct=0,ch,cm,pm,ph;
+	printf("Ingrese la cantidad de curriculums de hombres ");
+	scanf("%f",&ch);
+	printf("Ingrese la cantidad de curriculums de mujeres ");
+	scanf("%f",&cm);
+	ct=ch+cm;
+	ph=porcentaje_hombres(ch,ct);
+	pm=porcentaje_mujeres(cm,ct);
+	printf("\n El porcentaje de hombres es %.2f",ph);
+	printf("\n El porcentaje de mujers es %.2f",pm);
+	}
+
+	float porcentaje_hombres(float ch, float ct){
+
+	return (ch*100)/ct;
+
+	}
+
+	float porcentaje_mujeres(float cm, float ct){
+
+	return (cm*100)/ct;
+
+
+	}
+
+
+4:
+#include <stdio.h>
+#include <stdlib.h>
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+	float presion(float fue, float su);
+	int main() {
+	float su=0,fue=0,resul=0;
+	printf(" Ingrese la fuerza ");
+	scanf("%f",&fue);
+	printf(" Ingrese la superficie ");
+	scanf("%f",&su);
+	resul=presion (fue,su);
+	printf("La presion es = %f ",resul);
+	}
+
+	float presion(float fue, float su){
+	return fue/su;
+	}
+
+5:
+
+#include <stdio.h>
+#include <stdlib.h>
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+
+	int main( ) {
+	int r1=0,r2=0,r3=0,r4=0,r5=0,rt;
+	printf("Ingrese una resistencia ");
+	scanf("%d",&r1);
+	printf("Ingrese una resistencia ");
+	scanf("%d",&r2);
+	printf("Ingrese una resistencia ");
+	scanf("%d",&r3);
+	printf("Ingrese una resistencia ");
+	scanf("%d",&r4);
+	printf("Ingrese una resistencia ");
+	scanf("%d",&r5);
+	rt=reto(r1,r2,r3,r4,r5);
+
+	printf(" \n La resistencia total es  = %d ",rt );
+	printf(" \n R1 = %d, R2= %d , R3= %d, R4= %d, R5= %d ",r1,r2,r3,r4,r5);
+	}
+
+	int reto(int r1, int r2, int r3, int r4, int r5){
+
+	return r1+r2+r3+r4+r5;
+
+
+	}
+
+6:
+
+#include <stdio.h>
+#include <stdlib.h>
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+	float oct(float num);
+
+	int main() {
+	float num=0,res;
+	printf(" Ingrese un numero ");
+	scanf("%f",&num);
+	res=oct(num);
+	printf(" La octava parte de %.2f es %.2f ",num,res);
+	}
+
+	float oct (float num){
+		return num/8;
+	}
+
+
+7:
+#include <stdio.h>
+#include <stdlib.h>
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+	void teca ();
+
+	int main() {
+	int num1,num2;
+	printf(" Ingrese un numero : ");
+	scanf("%d",&num1);
+	printf(" Ingrese otro numero : ");
+	scanf("%d",&num2);
+	teca(num1,num2);
+	}
+
+	void teca(int num1, int num2){
+		if (num1>num2) {
+			printf(" %d es mayor que %d ",num1,num2);
+		}else if(num2>num1){
+			printf(" %d es mayor que %d ",num2,num1);
+		} else{
+			printf(" %d es igual que %d ",num1,num2);
+		}
+
+	}
